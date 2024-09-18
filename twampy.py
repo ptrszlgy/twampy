@@ -486,7 +486,7 @@ class twampyControlClient:
 
         self.nbrSessions = 0
 
-    def reqSession(self, sender="", s_port=20001, receiver="", r_port=20002, startTime=0, timeOut=3, dscp=0, padding=0):
+    def reqSession(self, sender="", s_port=20001, receiver="", r_port=20002, startTime=0, timeOut=0, dscp=0, padding=0):
         typeP = dscp << 24
 
         if startTime != 0:
